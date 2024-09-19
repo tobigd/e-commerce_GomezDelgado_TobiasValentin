@@ -45,7 +45,7 @@ function card() {
                     <div class="card-body">
                         <h5 class="card-title">CARTA ${i}</h5>
                         <p class="card-text">Descripcion del producto</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="producto.html" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>`);
