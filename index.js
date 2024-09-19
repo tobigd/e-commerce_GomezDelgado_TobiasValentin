@@ -30,7 +30,7 @@ codigo()
 
 // const card3 = "Computadora Acer V2";
 // document.querySelector("h5").innerText= card3;ººº1
-
+function codigo(){
 const prod = "Productos";
 document.querySelector("h1").innerText = "Productos";
 const section = document.querySelector("section");
@@ -45,7 +45,7 @@ function card() {
                     <div class="card-body">
                         <h5 class="card-title">CARTA ${i}</h5>
                         <p class="card-text">Descripcion del producto</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <a href="#" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>`);
@@ -55,7 +55,8 @@ function card() {
 }
 
 card();
-
+}
+codigo()
 
 
 
