@@ -34,101 +34,211 @@ document.querySelector("h1").innerText = "Productos";
 const section = document.querySelector("section");
 
 const data = [{
-    id: 1,
-    persona: "Manolo Bootherstone",
-    tipo: "Cost Accountant",
-    descripcion: "Muy buen tipo",
-    lugar: "China",
-    fecha: "2/25/2026",
-    precio: "$3896.63"
-  }, {
-    id: 2,
-    persona: "Belia Poulsen",
-    tipo: "Web Developer II",
-    descripcion: "Medio malo",
-    lugar: "China",
-    fecha: "5/15/2026",
-    precio: "$1382.63"
-  }, {
-    id: 3,
-    persona: "Cecelia Vuittet",
-    tipo: "Community Outreach Specialist",
-    descripcion: "Ahora a disfrutar",
-    lugar: "China",
-    fecha: "11/12/2026",
-    precio: "$4913.81"
-  }, {
-    id: 4,
-    persona: "Amanda Wyldes",
-    tipo: "Senior Quality Engineer",
-    descripcion: "Una noche de maquillaje",
-    lugar: "Sweden",
-    fecha: "9/14/2025",
-    precio: "$4865.34"
-  }, {
-    id: 5,
-    persona: "Fabian Goodbarr",
-    tipo: "Staff Accountant II",
-    descripcion: "No hay lugar para silencios",
-    lugar: "Russia",
-    fecha: "1/22/2025",
-    precio: "$4033.58"
-  }, {
-    id: 6,
-    persona: "Miran Skirling",
-    tipo: "Occupational Therapist",
-    descripcion: "El cantante del momento",
-    lugar: "China",
-    fecha: "5/2/2026",
-    precio: "$3166.95"
-  }, {
-    id: 7,
-    persona: "Sylas Becket",
-    tipo: "Programmer Analyst II",
-    descripcion: "Deja lejos a tus mascotas",
-    lugar: "Russia",
-    fecha: "8/22/2026",
-    precio: "$3220.01"
-  }, {
-    id: 8,
-    persona: "Derwin Graben",
-    tipo: "Senior Financial Analyst",
-    descripcion: "A cocinar algo rico",
-    lugar: "Thailand",
-    fecha: "4/21/2026",
-    precio: "$4083.75"
-  }, {
-    id: 9,
-    persona: "Shelley Grenshiels",
-    tipo: "Nurse",
-    descripcion: "Unas siestitas juntos",
-    lugar: "Peru",
-    fecha: "6/8/2025",
-    precio: "$2858.92"
-  }, {
-    id: 10,
-    persona: "Elsa Ettritch",
-    tipo: "Engineer I",
-    descripcion: "Ciencia? es por aqui",
-    lugar: "Japan",
-    fecha: "7/29/2025",
-    precio: "$682.81"
-  }];
+  url: "#",
+  id: 1,
+  character: "Gentamicin Sulfate",
+  category: "movie",
+  descripcion: "cac",
+  price: "$9.80",
+  stock: 20,
+  age: "kids"
+}, {
+  id: 2,
+  url: "#",
+  character: "Reglan",
+  category: "animals",
+  descripcion: "cac",
+  price: "$5.30",
+  stock: 7,
+  age: "teenagers"
+}, {
+  id: 3,
+  url: "#",
+  character: "Caduet",
+  category: "animals",
+  descripcion: "cac",
+  price: "$14.30",
+  stock: 22,
+  age: "adults"
+}, {
+  id: 4,
+  url: "#",
+  character: "Carvedilol",
+  category: "random",
+  descripcion: "cac",
+  price: "$4.33",
+  stock: 11,
+  age: "kids"
+}, {
+  id: 5,
+  url: "#",
+  character: "Ursodiol",
+  category: "movie",
+  descripcion: "cac",
+  price: "$29.56",
+  stock: 2,
+  age: "adults"
+}, {
+  id: 6,
+  url: "#",
+  character: "First Aid for Mind and Body",
+  category: "animals",
+  descripcion: "cac",
+  price: "$11.60",
+  stock: 13,
+  age: "adults"
+}, {
+  id: 7,
+  url: "#",
+  character: "BETTER THAN NATURE ESSENCE",
+  category: "movie",
+  descripcion: "cac",
+  price: "$23.05",
+  stock: 29,
+  age: "adults"
+}, {
+  id: 8,
+  url: "#",
+  character: "Cold Sores",
+  category: "random",
+  descripcion: "cac",
+  price: "$12.34",
+  stock: 25,
+  age: "adults"
+}, {
+  id: 9,
+  url: "#",
+  character: "Estradiol",
+  category: "superhero",
+  descripcion: "cac",
+  price: "$26.88",
+  stock: 12,
+  age: "teenagers"
+}, {
+  id: 10,
+  url: "#",
+  character: "Menthol and Methyl Salicylate",
+  category: "random",
+  descripcion: "cac",
+  price: "$12.58",
+  stock: 12,
+  age: "teenagers"
+}, {
+  id: 11,
+  url: "#",
+  character: "Amoeba Tox",
+  category: "movie",
+  descripcion: "cac",
+  price: "$6.93",
+  stock: 29,
+  age: "kids"
+}, {
+  id: 12,
+  url: "#",
+  character: "Ibuprofen",
+  category: "animals",
+  descripcion: "cac",
+  price: "$8.85",
+  stock: 27,
+  age: "adults"
+}
+];
   
-
-    const citas = data.map((cita) => 
+function crearCard(productos)
+{
+    const cus = productos.map((producto) => 
         `<div class="col-md-4">
                 <div class="card">
-                    <img src="${cita.url}" class="card-img-top">
+                    <img src="${producto.url}" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">${cita.persona}</h5>
-                        <p class="card-text">${cita.tipo}</p>
-                        <p class="card-text">${cita.descripcion}</p>
-                        <a href="/pages/producto.html?prod=${cita.id}" class="btn btn-primary">Ver más</a>
+                    <p class="card-text">${producto.age}</p>
+                        <h5 class="card-title">${producto.character}</h5>
+                        <p class="card-text">${producto.category}</p>
+                        <p class="card-text">${producto.descripcion}</p>
+                        <a href="/pages/producto.html?prod=${producto.id}" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>`);
 
-    section.innerHTML = citas.join().replaceAll(",", "");
-    // Usamos join('') para concatenar los elementos sin comas
+    section.innerHTML = cus.join().replaceAll(",", "");
+  }
+    crearCard(data)
+    // buttons search, remove and button
+    const search = document.querySelector("#search");
+    const remove = document.querySelector("#remove");
+    const button = document.querySelector("#button");
+    // buttons category
+    const all = document.querySelector("#allButton");
+    const animals = document.querySelector("#animalsButton");
+    const movie = document.querySelector("#movieButton");
+    const superhero = document.querySelector("#superheroButton");
+    const random = document.querySelector("#randomButton");
     
+    function bus() {
+      
+      // Verificamos si el valor de búsqueda no está vacío
+      if (search.value === "") {
+        alert("Por favor, ingresa un nombre para buscar.");
+        return;
+      }
+    
+      // Filtramos los datos con el valor del input
+      const filtro = data.filter((producto) => 
+        producto.character.toLowerCase().includes(search.value.toLowerCase().trim()));
+      
+      if (filtro.length > 0) {
+        crearCard(filtro);
+      } else {
+        section.innerHTML = "<p>No se encontraron resultados.</p>";
+      }
+    }
+    function restart() {
+
+      crearCard(data);
+      search.value="";
+    }
+    
+    function allF() {
+      const filAll = data.filter((producto) => 
+        producto.category.toLowerCase().trim().includes(all.value.toLowerCase().trim()));
+        crearCard(filAll);
+        search.value="";
+      }
+      function aniF() {
+        const filAll = data.filter((producto) => 
+          producto.category.includes("animals"));
+          crearCard(filAll);
+          search.value="";
+        }
+      function supF() {
+        const filAll = data.filter((producto) => 
+          producto.category.includes("superhero"));
+          crearCard(filAll);
+          search.value="";
+        }
+
+        function movF() {
+          const filAll = data.filter((producto) => 
+            producto.category.includes("movie"));
+            crearCard(filAll);
+            search.value="";
+          }
+
+          function ranF() {
+            const filAll = data.filter((producto) => 
+              producto.category.includes("random"));
+              crearCard(filAll);
+              search.value="";
+            }
+
+    button.addEventListener("click", bus);
+    remove.addEventListener("click", restart);
+
+    all.addEventListener("click", allF);
+    animals.addEventListener("click", aniF);
+    movie.addEventListener("click", movF);
+    superhero.addEventListener("click", supF);
+    random.addEventListener("click", ranF);
+
+    
+    // Usamos join('') para concatenar los elementos sin comas

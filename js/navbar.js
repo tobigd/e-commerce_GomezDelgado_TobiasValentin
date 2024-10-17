@@ -21,10 +21,6 @@ let navCode = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     ${menu.join().replaceAll(",", "")}
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
   </div>
 </div>
 </nav>`

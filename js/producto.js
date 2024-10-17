@@ -42,103 +42,122 @@ let etiquetas = `<div>
 `;
 */
 const data = [{
-    id: 1,
-    persona: "Manolo Bootherstone",
-    tipo: "Cost Accountant",
-    descripcion: "Muy buen tipo",
-    lugar: "China",
-    fecha: "2/25/2026",
-    precio: "$3896.63",
-    available: 3
-  }, {
-    id: 2,
-    persona: "Belia Poulsen",
-    tipo: "Web Developer II",
-    descripcion: "Medio malo",
-    lugar: "China",
-    fecha: "5/15/2026",
-    precio: "$1382.63",
-    available: 3
-  }, {
-    id: 3,
-    persona: "Cecelia Vuittet",
-    tipo: "Community Outreach Specialist",
-    descripcion: "Ahora a disfrutar",
-    lugar: "China",
-    fecha: "11/12/2026",
-    precio: "$4913.81",
-    available: 3
-  }, {
-    id: 4,
-    persona: "Amanda Wyldes",
-    tipo: "Senior Quality Engineer",
-    descripcion: "Una noche de maquillaje",
-    lugar: "Sweden",
-    fecha: "9/14/2025",
-    precio: "$4865.34",
-    available: 3
-  }, {
-    id: 5,
-    persona: "Fabian Goodbarr",
-    tipo: "Staff Accountant II",
-    descripcion: "No hay lugar para silencios",
-    lugar: "Russia",
-    fecha: "1/22/2025",
-    precio: "$4033.58",
-    available: 3
-  }, {
-    id: 6,
-    persona: "Miran Skirling",
-    tipo: "Occupational Therapist",
-    descripcion: "El cantante del momento",
-    lugar: "China",
-    fecha: "5/2/2026",
-    precio: "$3166.95",
-    available: 3
-  }, {
-    id: 7,
-    persona: "Sylas Becket",
-    tipo: "Programmer Analyst II",
-    descripcion: "Deja lejos a tus mascotas",
-    lugar: "Russia",
-    fecha: "8/22/2026",
-    precio: "$3220.01",
-    available: 3
-  }, {
-    id: 8,
-    persona: "Derwin Graben",
-    tipo: "Senior Financial Analyst",
-    descripcion: "A cocinar algo rico",
-    lugar: "Thailand",
-    fecha: "4/21/2026",
-    precio: "$4083.75",
-    available: 3
-  }, {
-    id: 9,
-    persona: "Shelley Grenshiels",
-    tipo: "Nurse",
-    descripcion: "Unas siestitas juntos",
-    lugar: "Peru",
-    fecha: "6/8/2025",
-    precio: "$2858.92",
-    available: 3
-  }, {
-    id: 10,
-    persona: "Elsa Ettritch",
-    tipo: "Engineer I",
-    descripcion: "Ciencia? es por aqui",
-    lugar: "Japan",
-    fecha: "7/29/2025",
-    precio: "$682.81",
-    available: 3
-  }];
+  url: "#",
+  id: 1,
+  character: "Gentamicin Sulfate",
+  category: "movie",
+  descripcion: "cac",
+  price: "$9.80",
+  stock: 20,
+  age: "kids"
+}, {
+  id: 2,
+  url: "#",
+  character: "Reglan",
+  category: "animals",
+  descripcion: "cac",
+  price: "$5.30",
+  stock: 7,
+  age: "teenagers"
+}, {
+  id: 3,
+  url: "#",
+  character: "Caduet",
+  category: "animals",
+  descripcion: "cac",
+  price: "$14.30",
+  stock: 22,
+  age: "adults"
+}, {
+  id: 4,
+  url: "#",
+  character: "Carvedilol",
+  category: "random",
+  descripcion: "cac",
+  price: "$4.33",
+  stock: 11,
+  age: "kids"
+}, {
+  id: 5,
+  url: "#",
+  character: "Ursodiol",
+  category: "movie",
+  descripcion: "cac",
+  price: "$29.56",
+  stock: 2,
+  age: "adults"
+}, {
+  id: 6,
+  url: "#",
+  character: "First Aid for Mind and Body",
+  category: "animals",
+  descripcion: "cac",
+  price: "$11.60",
+  stock: 13,
+  age: "adults"
+}, {
+  id: 7,
+  url: "#",
+  character: "BETTER THAN NATURE ESSENCE",
+  category: "movie",
+  descripcion: "cac",
+  price: "$23.05",
+  stock: 29,
+  age: "adults"
+}, {
+  id: 8,
+  url: "#",
+  character: "Cold Sores",
+  category: "random",
+  descripcion: "cac",
+  price: "$12.34",
+  stock: 25,
+  age: "adults"
+}, {
+  id: 9,
+  url: "#",
+  character: "Estradiol",
+  category: "superhero",
+  descripcion: "cac",
+  price: "$26.88",
+  stock: 12,
+  age: "teenagers"
+}, {
+  id: 10,
+  url: "#",
+  character: "Menthol and Methyl Salicylate",
+  category: "random",
+  descripcion: "cac",
+  price: "$12.58",
+  stock: 12,
+  age: "teenagers"
+}, {
+  id: 11,
+  url: "#",
+  character: "Amoeba Tox",
+  category: "movie",
+  descripcion: "cac",
+  price: "$6.93",
+  stock: 29,
+  age: "kids"
+}, {
+  id: 12,
+  url: "#",
+  character: "Ibuprofen",
+  category: "animals",
+  descripcion: "cac",
+  price: "$8.85",
+  stock: 27,
+  age: "adults"
+}
+];
 
 function cards() {
 let main = document.querySelector("main");
 
 const elemento = window.location.search.split("=")[1];
 
-const evento = data.find((data) => data.id == elemento);
+const cos = data.find((data) => data.id == elemento);
 /*
  <div class="rating">
                     <span>⭐⭐⭐⭐⭐</span> <a href="#">(3)</a>
@@ -147,36 +166,34 @@ const evento = data.find((data) => data.id == elemento);
 let etiquetas = `<div class="producto-container">
     <div class="producto-main">
         <div class="left-section">
-            <img src="${evento.url}" alt="Persona ${evento.id}" id="main-image">
+            <img src="${cos.url}" alt="Persona ${cos.id}" id="main-image">
         </div>
 
         <div class="center-section">
             <div class="product-info">
-            <h3 class="date">${evento.fecha}</h3>
-                <h1 class="producto-h1">${evento.persona}</h1>
-                <h2 class="type">${evento.tipo}</h2>
-
-                <p class="bold">${evento.descripcion}</p>
+            <h3 class="type">${cos.age}</h3>
+                <h1 class="producto-h1">${cos.character}</h1>
+            <h3 class="age">${cos.category}</h3>
+                <p class="bold">${cos.descripcion}</p>
               
                 
-                <p class="place">${evento.lugar}</p>
             </div>
         </div>
 
         <div class="right-section">
             <div class="shipping-info">
-                <h3>Quedan ${evento.available} lugares disponibles</h3>
+                <h3>Quedan ${cos.stock} disfraces disponibles</h3>
                 <div class="quantity-selector">
-                    <label for="quantity" class="quantity-label">Quantity:</label>
+                    <label for="quantity" class="quantity-label">Size:</label>
                     <select id="quantit.y" class="quantity-dropdown">
-                        <option value="1">1 lugar</option>
-                        <option value="2">2 lugares</option>
-                        <option value="3">3 lugares</option>
-                        <option value="4">4 lugares</option>
-                        <option value="5">5 lugares</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                        <option value="5">custom</option>
                     </select>
                 </div>
-                <h4 class="price">${evento.precio}</h4>
+                <h4 class=price>${cos.price}</h4>
             <button class="btn primary-btn">Comprar ahora!</button>
         </div>
     </div>
