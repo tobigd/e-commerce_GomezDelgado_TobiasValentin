@@ -1,5 +1,105 @@
 console.log ("Hola, buenas noches! Les hablo a todos desde wasa bisnes, saludos a levere club de fans (corazon)");
-
+const data = [
+  {
+  id: 1,
+  url: "../photos/1.jpg",
+  character: "Buzz Lightyear",
+  category: "movie",
+  descripcion: "El intrépido guardián espacial de Toy Story, perfecto para los pequeños aventureros.",
+  price: "$9.80",
+  stock: 20,
+  age: "kids"
+}, {
+  id: 2,
+  url: "../photos/2.jpg",
+  character: "Snoopy",
+  category: "animals",
+  descripcion: "El encantador perro beagle de Charlie Brown, ideal para niños que aman las aventuras caninas.",
+  price: "$5.30",
+  stock: 7,
+  age: "teenagers"
+}, {
+  id: 3,
+  url: "../photos/3.jpg",
+  character: "Simba",
+  category: "animals",
+  descripcion: "El valiente león de El Rey León, perfecto para adultos con corazón aventurero.",
+  price: "$14.30",
+  stock: 22,
+  age: "adults"
+}, {
+  id: 4,
+  url: "../photos/4.jpg",
+  character: "Minnie Mouse",
+  category: "animals",
+  descripcion: "El adorable ícono de Disney con orejas redondas, ideal para los más pequeños que aman la diversión y la moda.",
+  price: "$4.33",
+  stock: 11,
+  age: "kids"
+}, {
+  id: 5,
+  url: "../photos/5.jpg",
+  character: "Darth Vader",
+  category: "movie",
+  descripcion: "El villano más icónico de Star Wars, para los adultos que buscan un disfraz impactante.",
+  price: "$29.56",
+  stock: 2,
+  age: "adults"
+}, {
+  id: 6,
+  url: "../photos/6.jpg",
+  character: "Zootopia Nick Wilde",
+  category: "animals",
+  descripcion: "El zorro astuto de Zootopia, ideal para adultos que adoran la comedia animal.",
+  price: "$11.60",
+  stock: 13,
+  age: "adults"
+}, {
+  id: 7,
+  url: "../photos/7.jpg",
+  character: "Iron Man",
+  category: "superhero",
+  descripcion: "El superhéroe millonario de Marvel, con su traje de alta tecnología, listo para salvar el día.",
+  price: "$23.05",
+  stock: 29,
+  age: "adults"
+}, {
+  id: 8,
+  url: "../photos/8.jpg",
+  character: "Hombre Sándwich de Milanga",
+  category: "random",
+  descripcion: "Para los adultos con hambre de diversión, este disfraz de sándwich de milanesa es único en su clase.",
+  price: "$12.34",
+  stock: 25,
+  age: "adults"
+}, {
+  id: 9,
+  url: "../photos/9.jpg",
+  character: "Spider-Man",
+  category: "superhero",
+  descripcion: "El superhéroe arácnido favorito, ideal para adolescentes que quieren balancearse entre edificios.",
+  price: "$26.88",
+  stock: 12,
+  age: "teenagers"
+}, {
+  id: 10,
+  url: "../photos/10.jpg",
+  character: "Hombre Mate",
+  category: "random",
+  descripcion: "Un disfraz que celebra el mate, perfecto para adultos que quieren lucir su lado más tradicional y divertido.",
+  price: "$12.58",
+  stock: 12,
+  age: "adults"
+}, {
+  id: 11,
+  url: "../photos/11.jpg",
+  character: "Elsa",
+  category: "movie",
+  descripcion: "La reina de Arendelle de Frozen, perfecta para los niños que quieren dejarlo ir.",
+  price: "$6.93",
+  stock: 29,
+  age: "kids"
+}];
 // console.log ("Hola, buenas noches! Les hablo a todos desde wasa bisnes, saludos a levere club de fans (corazon)");
 
 // console.log (1+1==1 )
@@ -33,117 +133,6 @@ codigo()
 document.querySelector("h1").innerText = "Productos";
 const section = document.querySelector("section");
 
-const data = [{
-  url: "#",
-  id: 1,
-  character: "Gentamicin Sulfate",
-  category: "movie",
-  descripcion: "cac",
-  price: "$9.80",
-  stock: 20,
-  age: "kids"
-}, {
-  id: 2,
-  url: "#",
-  character: "Reglan",
-  category: "animals",
-  descripcion: "cac",
-  price: "$5.30",
-  stock: 7,
-  age: "teenagers"
-}, {
-  id: 3,
-  url: "#",
-  character: "Caduet",
-  category: "animals",
-  descripcion: "cac",
-  price: "$14.30",
-  stock: 22,
-  age: "adults"
-}, {
-  id: 4,
-  url: "#",
-  character: "Carvedilol",
-  category: "random",
-  descripcion: "cac",
-  price: "$4.33",
-  stock: 11,
-  age: "kids"
-}, {
-  id: 5,
-  url: "#",
-  character: "Ursodiol",
-  category: "movie",
-  descripcion: "cac",
-  price: "$29.56",
-  stock: 2,
-  age: "adults"
-}, {
-  id: 6,
-  url: "#",
-  character: "First Aid for Mind and Body",
-  category: "animals",
-  descripcion: "cac",
-  price: "$11.60",
-  stock: 13,
-  age: "adults"
-}, {
-  id: 7,
-  url: "#",
-  character: "BETTER THAN NATURE ESSENCE",
-  category: "movie",
-  descripcion: "cac",
-  price: "$23.05",
-  stock: 29,
-  age: "adults"
-}, {
-  id: 8,
-  url: "#",
-  character: "Cold Sores",
-  category: "random",
-  descripcion: "cac",
-  price: "$12.34",
-  stock: 25,
-  age: "adults"
-}, {
-  id: 9,
-  url: "#",
-  character: "Estradiol",
-  category: "superhero",
-  descripcion: "cac",
-  price: "$26.88",
-  stock: 12,
-  age: "teenagers"
-}, {
-  id: 10,
-  url: "#",
-  character: "Menthol and Methyl Salicylate",
-  category: "random",
-  descripcion: "cac",
-  price: "$12.58",
-  stock: 12,
-  age: "teenagers"
-}, {
-  id: 11,
-  url: "#",
-  character: "Amoeba Tox",
-  category: "movie",
-  descripcion: "cac",
-  price: "$6.93",
-  stock: 29,
-  age: "kids"
-}, {
-  id: 12,
-  url: "#",
-  character: "Ibuprofen",
-  category: "animals",
-  descripcion: "cac",
-  price: "$8.85",
-  stock: 27,
-  age: "adults"
-}
-];
-  
 function crearCard(productos)
 {
     const cus = productos.map((producto) => 
@@ -155,7 +144,7 @@ function crearCard(productos)
                         <h5 class="card-title">${producto.character}</h5>
                         <p class="card-text">${producto.category}</p>
                         <p class="card-text">${producto.descripcion}</p>
-                        <a href="/pages/producto.html?prod=${producto.id}" class="btn btn-primary">Ver más</a>
+                        <a href="../pages/producto.html?prod=${producto.id}" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>`);

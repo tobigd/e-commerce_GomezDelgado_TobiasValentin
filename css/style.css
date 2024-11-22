@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-img-top {
+    display: flex;                /* Usamos Flexbox para centrar el contenido interno */
+    justify-content: center;      /* Centra la imagen horizontalmente */
+    align-items: center;          /* Centra la imagen verticalmente */
+    width: 30%;                   /* El contenedor ocupa el 50% del ancho de la tarjeta */
+    height: 30%;                /* Define una altura específica */
+    margin: 0 auto;               /* Centra el contenedor horizontalmente */
+  }
+  
+  .card-img-top img {
+    max-width: 100%;              /* Evita que la imagen supere el tamaño del contenedor */
+    max-height: 100%;             /* Evita que la imagen supere la altura definida */
+  }
+  
+
+
+  
+  .card-body {
+    padding: 10px;
+  }
+  
